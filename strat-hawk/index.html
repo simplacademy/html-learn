@@ -12,6 +12,20 @@
         <a href="signup.html">Signup</a>
         <h2>Plan</h2>
         <img src="images/flight.jpeg" width="25%">
+        
+        <h2>Search Flights</h2>
+        <form>
+            <input type="text" name="from" placeholder="From">
+            <input type="text" name="to" placeholder="To">
+            <input type="text" name="travelDate" placeholder="Travel Date yyyy-mm-dd">
+            <select name="class">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First</option>
+            </select>
+            <input type="submit" value="Search">
+        </form>
+
         <h2>Recommended Flights</h2>
         <table cellpadding="10" border="1" cellspacing="0">
             <tr>
@@ -36,7 +50,11 @@
                     Sat 31 Oct 2020
                 </td>
                 <td>$3447</td>
-                <td></td>
+                <td>
+                    <form action="bookings.html">
+                        <input type="submit" value="Book">
+                    </form>
+                </td>
             </tr>
             <tr>
                 <td>SH245</td>
@@ -52,7 +70,11 @@
                     Wed 11 Nov 2020
                 </td>
                 <td>$801</td>
-                <td></td>
+                <td>
+                    <form action="bookings.html">
+                        <input type="submit" value="Book">
+                    </form>
+                </td>
             </tr>
         </table>
     </body>

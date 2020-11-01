@@ -11,5 +11,74 @@
         <a href="login.html">Login</a> 
         <a href="signup.html">Signup</a>
         <h2>Signup</h2>
+        <form action="login.html">
+            <table cellpadding="10">
+                <tr>
+                    <td>
+                        Title<br>
+                        <input type="radio" name="title" value="mister" id="mister" required>
+                        <label for="mister">Mr.</label>
+                        <input type="radio" name="title" value="missus" id="missus">
+                        <label for="missus">Mrs.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </td>
+                    <td>
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="email" required 
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                               title="xxxx@yyyy.zzz format">
+                    </td>
+                    <td>
+                        <label for="mobileNumber">Mobile Number</label><br>
+                        <input type="text" name="mobileNumber" id="mobileNumber" pattern="[0-9]{10}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" 
+                               pattern="    (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               title="A number, 1 upper case, 1 lower case with 8 or more characters" required>
+                    </td>
+                    <td>
+                        <label for="confirmPassword">Confirm Password</label><br>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               title="Password must contain 1 number, 1 upper case, 1 lower case and at least 8 or more characters">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="language">Preferred Language</label><br>
+                        <select name="language" id="language">
+                            <option>Chinese</option>
+                            <option>Spanish</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Portuguese</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">Receive newsletters</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
