@@ -14,10 +14,12 @@
         <img src="images/flight.jpeg" width="25%">
         
         <h2>Search Flights</h2>
-        <form>
-            <input type="text" name="from" placeholder="From">
-            <input type="text" name="to" placeholder="To">
-            <input type="text" name="travelDate" placeholder="Travel Date yyyy-mm-dd">
+        <form action="index.html">
+            <input type="text" name="from" placeholder="From" required>
+            <input type="text" name="to" placeholder="To" required>
+            <input type="text" name="travelDate" placeholder="Travel Date yyyy-mm-dd" 
+                   pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" 
+                   title="yyyy-mm-dd" required>
             <select name="class">
                 <option>Economy</option>
                 <option>Business</option>
